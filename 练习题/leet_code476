@@ -1,0 +1,17 @@
+class Solution {
+public:
+    int findComplement(int num) {
+        long int flag = 1;
+        long int complement = 0;
+
+        while (num && flag <= num) {
+        	int temp = flag & num;
+        	if (temp == 0) {
+        		complement |= flag;
+        	}
+        	flag = flag << 1;
+        }
+
+        return complement;
+    }
+};
