@@ -58,7 +58,6 @@ for i in range(100000000):
     arr[384] = arr[384]+rate*(x[385] - hx)
 
 
-
     Jtheta = Jtheta + (hx-x[385])*(hx-x[385])
     print(Jtheta)
     # for k in range(385):
